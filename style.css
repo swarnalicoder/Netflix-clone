@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/bg.jpg");
+    height: 98vh;
+    width: 100vw;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+
+}
+
+.main .box {
+    height: 98vh;
+    width: 100%;
+    opacity: 0.62;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    max-width: 89vw;
+    margin: auto;
+    padding-top: 10px;
+    justify-content: space-between;
+    height: 63px;
+}
+
+nav img {
+    color: red;
+    width: 150px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav button {
+    z-index: 10;
+    position: relative;
+    width: 69px;
+}
+
+.hero {
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap: 5px;
+    padding: 0 80px;
+
+}
+
+.hero> :nth-child(1) {
+    font-weight: 900;
+    font-size: 54px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(2) {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+
+.seperation {
+    height: 2px;
+    background-color: rgb(104, 103, 103);
+    margin: 27px 0px;
+}
+
+.navb {
+    display: flex;
+    gap: 6px;
+}
+
+.btn {
+    font-weight: 400;
+    padding: 5px 5px;
+    background-color: rgba(250, 250, 248, 0.192);
+    color: white;
+    border-radius: 3px;
+    border: 1px solid rgba(241, 238, 238, 0.384);
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding:14px 18px;
+    font-size: 20px;
+    border-radius: 3px;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0.007);
+}
+
+.btn-red-sem {
+    background-color: red;
+    color: white;
+}
+
+input {
+    padding: 18px 171px 18px 18px;
+    color: white;
+    font-size: 12px;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+}
+
+.first {
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    width: 555px;
+    position: relative;
+    z-index: 10;
+}
+
+.img {
+    position: relative;
+}
+
+.img video {
+    position: absolute;
+    top: 52px;
+    right: 0;
+    width: 555px;
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+}
+
+section.first>div :nth-child(1) {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+
+}
+
+.faq h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox :hover{
+    background-color: rgb(116, 114, 114);
+    color: white;
+}
+
+.faqbox {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(88, 89, 90, 0.5);
+        cursor: pointer;
+        padding: 20px;
+        max-width: 50vw;
+        font-size: 25px;
+        margin: 30px auto;
+        transition: all 1s ease-out;
+        font-family: fangsong;
+}
+
+.faqbox.plus {
+    filter: opacity(1);
+}
+
+.hero2  >:nth-child(1) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin: 11px;
+}
+
+
+footer{
+    max-width: 60vw;
+    margin: auto;
+    padding: 45 px;
+    color: rgb(173, 171, 171);  
+}
+
+footer .questions {
+   padding: 24px 0;
+}
+
+.footer{
+    display: grid;
+    margin: 34px auto;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footerIteam {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+}
+
+.footer a{
+    color: rgb(173, 171, 171);
+    font-size: 14px;
+    font-family: ui-rounded;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.footerItem {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    nav{
+        max-width: 90vw;
+    }
+
+    .first {
+        flex-wrap: wrap;
+    }
+
+    .img img {
+        width: 305px;
+    }
+
+    .img video {
+        width: 305px;
+    }
+
+    .hero> :nth-child(1) {
+        font-size: 32px;
+    }
+
+    .hero> :nth-child(2) {
+        font-size: 18px;
+    }
+
+    .hero> :nth-child(3) {
+        font-size: 18px;
+    }
+
+    .hero-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .faq h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+
+    footer {
+        max-width: 90vw;
+        padding: 75px 0;
+    }
+
+    .footerIteam{
+        align-items: center;
+    }
+    
+    .main .box{
+        height: 644px;
+    }
+
+    .main{
+        height: 644px;
+    }
+
+}
+
